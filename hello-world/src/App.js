@@ -1,4 +1,5 @@
 import './App.css';
+// import FragmentDemo from './components/FragmentDemo';
 // import Inline from './components/Inline';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -15,12 +16,15 @@ import './App.css';
 // import './components/appStyles.css';
 // import styles from './components/appStyles.module.css'
 // import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
+// import LifecycleA from './components/LifecycleA';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      <Table />
+      {/* <FragmentDemo /> */}
+      {/* <LifecycleA /> */}
       {/* <Form /> */}
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
