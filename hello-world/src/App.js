@@ -1,5 +1,5 @@
 import './App.css';
-import FocusInput from './components/FocusInput';
+// import FocusInput from './components/FocusInput';
 // import FragmentDemo from './components/FragmentDemo';
 // import Inline from './components/Inline';
 // import Greet from './components/Greet';
@@ -23,11 +23,13 @@ import FocusInput from './components/FocusInput';
 // import RegComp from './components/RegComp';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
+import FRParent from './components/FRParent';
 
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <FRParent />
+      {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <PureComp />
       <RegComp /> */}
