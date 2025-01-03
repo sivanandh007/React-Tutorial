@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import RegComp from './RegComp'
-import PureComp from './PureComp'
+// import RegComp from './RegComp'
+// import PureComp from './PureComp'
+import MemoComp from './MemoComp'
 
 class ParentComp extends Component {
 
@@ -24,9 +25,10 @@ class ParentComp extends Component {
     console.log('Parent Component Render')
     return (
       <div>
-        ParentComp
+        <MemoComp name={this.state.name}/>
+        {/* ParentComp
         <RegComp name = {this.state.name}></RegComp>
-        <PureComp name = {this.state.name}></PureComp>
+        <PureComp name = {this.state.name}></PureComp> */}
 
       </div>
 
