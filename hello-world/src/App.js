@@ -20,14 +20,16 @@ import './App.css';
 // import Table from './components/Table';
 // import PureComp from './components/PureComp';
 // import RegComp from './components/RegComp';
-import ParentComp from './components/ParentComp';
+// import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
+      <RefsDemo />
       {/* <PureComp />
       <RegComp /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
