@@ -17,12 +17,18 @@ import './App.css';
 // import styles from './components/appStyles.module.css'
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
-import Table from './components/Table';
+// import Table from './components/Table';
+// import PureComp from './components/PureComp';
+// import RegComp from './components/RegComp';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      {/* <PureComp />
+      <RegComp /> */}
+      <ParentComp />
+      {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
       {/* <Form /> */}
