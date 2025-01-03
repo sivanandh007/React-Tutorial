@@ -23,12 +23,21 @@ import './App.css';
 // import RegComp from './components/RegComp';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
-import FRParent from './components/FRParent';
+// import FRParent from './components/FRParent';
+// import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <FRParent />
+      <ErrorBoundary>
+      <Hero heroname = 'Batman' />
+      <Hero heroname = 'Super Man' />
+      <Hero heroname='joker' />
+      </ErrorBoundary>
+      {/* <PortalDemo /> */}
+      {/* <FRParent /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <PureComp />
