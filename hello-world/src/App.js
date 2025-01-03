@@ -1,4 +1,5 @@
 import './App.css';
+import FocusInput from './components/FocusInput';
 // import FragmentDemo from './components/FragmentDemo';
 // import Inline from './components/Inline';
 // import Greet from './components/Greet';
@@ -21,12 +22,13 @@ import './App.css';
 // import PureComp from './components/PureComp';
 // import RegComp from './components/RegComp';
 // import ParentComp from './components/ParentComp';
-import RefsDemo from './components/RefsDemo';
+// import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      <FocusInput />
+      {/* <RefsDemo /> */}
       {/* <PureComp />
       <RegComp /> */}
       {/* <ParentComp /> */}
