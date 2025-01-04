@@ -1,4 +1,6 @@
 import './App.css';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 // import FocusInput from './components/FocusInput';
 // import FragmentDemo from './components/FragmentDemo';
 // import Inline from './components/Inline';
@@ -25,17 +27,20 @@ import './App.css';
 // import RefsDemo from './components/RefsDemo';
 // import FRParent from './components/FRParent';
 // import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+      <HoverCounter />
+      <ClickCounter />
+      {/* <ErrorBoundary>
       <Hero heroname = 'Batman' />
       <Hero heroname = 'Super Man' />
       <Hero heroname='joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <PortalDemo /> */}
       {/* <FRParent /> */}
       {/* <FocusInput /> */}
