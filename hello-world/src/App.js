@@ -29,21 +29,26 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import RenderPropCounter from './components/RenderPropCounter';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import RenderPropCounter from './components/RenderPropCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 
 
 function App() {
   return (
     <div className="App">
-      <RenderPropCounter render={(count, incrementCount) => (
+      <UserProvider value = "Sivanandh">
+      <ComponentC />
+      </UserProvider>
+      {/* <RenderPropCounter render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
       )} />
 
       <RenderPropCounter render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
-      )} />
+      )} /> */}
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={(isLoggedIn) => isLoggedIn ? "Sivanandh": "Guest"  }/> */}
