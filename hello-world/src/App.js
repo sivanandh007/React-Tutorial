@@ -1,6 +1,6 @@
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
 // import FocusInput from './components/FocusInput';
 // import FragmentDemo from './components/FragmentDemo';
 // import Inline from './components/Inline';
@@ -29,13 +29,26 @@ import HoverCounter from './components/HoverCounter';
 // import PortalDemo from './components/PortalDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import RenderPropCounter from './components/RenderPropCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <HoverCounter />
-      <ClickCounter />
+      <RenderPropCounter render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+
+      <RenderPropCounter render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => isLoggedIn ? "Sivanandh": "Guest"  }/> */}
+      {/* <HoverCounter />
+      <ClickCounter /> */}
       {/* <ErrorBoundary>
       <Hero heroname = 'Batman' />
       <Hero heroname = 'Super Man' />
