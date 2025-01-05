@@ -17,7 +17,10 @@ import './App.css';
 // import ReducerCounterTwo from './components/ReducerCounterTwo';
 // import ReducerCounterThree from './components/ReducerCounterThree';
 // import DataFetchingOne from './components/DataFetchingOne';
-import DataFetchinfTwo from './components/DataFetchinfTwo';
+// import DataFetchinfTwo from './components/DataFetchinfTwo';
+// import FormInput from './components/FormInput';
+// import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
 
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
@@ -26,7 +29,10 @@ import DataFetchinfTwo from './components/DataFetchinfTwo';
 function App() {
   return (
     <div className="App">
-      <DataFetchinfTwo />
+      <HookTimer />
+      {/* <ClassTimer /> */}
+      {/* <FormInput /> */}
+      {/* <DataFetchinfTwo /> */}
       {/* <DataFetchingOne /> */}
       {/* <ReducerCounterThree /> */}
       {/* <ReducerCounterTwo /> */}
