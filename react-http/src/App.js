@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import UseContext from './components/UseContext';
+// import UseContext from './components/UseContext';
 // import IntervalHookCounter from './components/IntervalHookCounter';
 // import HookCounter from './components/HookCounter';
 // import PostForm from './components/PostForm';
@@ -13,19 +13,29 @@ import UseContext from './components/UseContext';
 // import UseEffectHookMouse from './components/UseEffectHookMouse';
 // import MouseContainer from './components/MouseContainer';
 // import DataFetching from './components/DataFetching';
+// import ReducerCounter from './components/ReducerCounter';
+// import ReducerCounterTwo from './components/ReducerCounterTwo';
+// import ReducerCounterThree from './components/ReducerCounterThree';
+// import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchinfTwo from './components/DataFetchinfTwo';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'Sivanandh'}>
+      <DataFetchinfTwo />
+      {/* <DataFetchingOne /> */}
+      {/* <ReducerCounterThree /> */}
+      {/* <ReducerCounterTwo /> */}
+      {/* <ReducerCounter /> */}
+      {/* <UserContext.Provider value={'Sivanandh'}>
         <ChannelContext.Provider value={'CookingWithMe'}>
           <UseContext />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
